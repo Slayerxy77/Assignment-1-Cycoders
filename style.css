@@ -1,0 +1,254 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #4f46e5;
+  --color-secondary: #06b6d4;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-border: #e2e8f0;
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+/* ===== Header / Nav ===== */
+header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: 6px 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+/* ===== Hero / About ===== */
+.hero {
+  text-align: center;
+  padding: 64px 20px 48px;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.bio {
+  max-width: 560px;
+  margin: 0 auto;
+  color: var(--color-text-light);
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 48px 20px;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ===== Cards ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.card h3 {
+  color: var(--color-primary);
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.card p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+/* ===== Contact ===== */
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  color: var(--color-text-light);
+  margin-bottom: 24px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  background-color: var(--color-primary);
+  color: #ffffff;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  padding: 24px 20px;
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive: Mobile (~375px) ===== */
+@media (max-width: 480px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 16px;
+  }
+
+  .hero {
+    padding: 40px 16px 32px;
+  }
+
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .avatar {
+    width: 110px;
+    height: 110px;
+  }
+
+  section {
+    padding: 32px 16px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
