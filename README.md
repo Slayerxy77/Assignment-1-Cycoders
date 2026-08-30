@@ -1,4 +1,3 @@
-# Assignment-1-Cycoders
 # Shubham Sinha - Personal Profile Website
 
 ## Overview
