@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Sinha | Personal Profile</title>
+  <link rel="icon" type="image/png" href="images/code-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Pure CSS Theme Toggle Checkbox -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle-input" aria-label="Toggle Dark and Light Mode">
+
+  <!-- Site Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#about" class="site-logo" title="Shubham Sinha">SS</a>
+      
+      <div class="header-right">
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Dark / Light Mode Switch -->
+        <label for="theme-toggle" class="theme-switch" title="Toggle Dark and Light Theme" aria-label="Toggle theme mode">
+          <span class="theme-icon sun" aria-hidden="true">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="theme-slider"></span>
+          <span class="theme-icon moon" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container about-container">
+        <div class="profile-image-wrapper">
+          <img src="images/profile.jpg" alt="Profile photo of Shubham Sinha" class="profile-img" width="400" height="400">
+        </div>
+        <div class="about-content">
+          <span class="badge">Welcome to my profile</span>
+          <h1 class="hero-title">Shubham Sinha</h1>
+          <p class="hero-subtitle">First-Year B.Tech CSE Student</p>
+          <p class="bio-text">
+            First-year B.Tech CSE student at Adamas University, Howrah, interested in programming and exploring new ideas. Currently building a foundation in C, C++, and Python, and practicing problem-solving on LeetCode.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            <a href="#projects" class="btn btn-secondary">View Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Tools</h2>
+        <p class="section-description">Technologies, programming languages, and tools I am currently learning and practicing:</p>
+        
+        <div class="cards-grid skills-grid">
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Python</h3>
+            <p class="card-text">Building a strong programming foundation, writing scripts, and practicing algorithmic problem solving.</p>
+            <span class="card-tag">Programming</span>
+          </article>
+
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">C</h3>
+            <p class="card-text">Grasping foundational computer science concepts, memory structure, pointers, and problem logic.</p>
+            <span class="card-tag">Fundamentals</span>
+          </article>
+
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+                <line x1="12" y1="9" x2="12" y2="15"></line>
+                <line x1="9" y1="12" x2="15" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">C++</h3>
+            <p class="card-text">Practicing object-oriented programming (OOP), STL containers, algorithms, and efficient problem solving.</p>
+            <span class="card-tag">OOP &amp; STL</span>
+          </article>
+
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Git &amp; GitHub</h3>
+            <p class="card-text">Managing code repositories, tracking version histories, and collaborating on open projects.</p>
+            <span class="card-tag">Version Control</span>
+          </article>
+
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="card-title">VS Code</h3>
+            <p class="card-text">Configured with essential extensions and shortcuts for a productive coding and debugging workflow.</p>
+            <span class="card-tag">Development Tool</span>
+          </article>
+
+          <article class="card skill-card">
+            <div class="card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20"></path>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">LeetCode / DSA Practice</h3>
+            <p class="card-text">Sharpening analytical thinking and tackling data structures and algorithms challenges regularly.</p>
+            <span class="card-tag">Problem Solving</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2 class="section-title">Projects &amp; Activities</h2>
+        <p class="section-description">A snapshot of what I am actively working on and exploring:</p>
+
+        <div class="cards-grid projects-grid">
+          <article class="card project-card">
+            <div class="project-header">
+              <span class="project-type">Active Practice</span>
+              <h3 class="card-title">Solving LeetCode Problems in Python</h3>
+            </div>
+            <p class="card-text">
+              Consistently solving coding problems focusing on arrays, strings, basic data structures, and mathematical algorithms in Python.
+            </p>
+            <div class="tag-list">
+              <span class="card-tag">Python</span>
+              <span class="card-tag">DSA</span>
+              <span class="card-tag">Problem Solving</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://leetcode.com/yourusername" target="_blank" rel="noopener noreferrer" class="link-action">
+                View LeetCode Profile &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-header">
+              <span class="project-type">Web Exploration</span>
+              <h3 class="card-title">Exploring Web Development Basics</h3>
+            </div>
+            <p class="card-text">
+              Learning semantic HTML5 structure, modern CSS responsive layout techniques (Flexbox &amp; Grid), and accessibility fundamentals.
+            </p>
+            <div class="tag-list">
+              <span class="card-tag">HTML5</span>
+              <span class="card-tag">CSS3</span>
+              <span class="card-tag">Responsive Design</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="link-action">
+                View GitHub Repo &rarr;
+              </a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="project-header">
+              <span class="project-type">C Programming</span>
+              <h3 class="card-title">C Fundamentals &amp; Console Programs</h3>
+            </div>
+            <p class="card-text">
+              Developing small utility programs and algorithms in C to master loops, arrays, structures, and control flow concepts.
+            </p>
+            <div class="tag-list">
+              <span class="card-tag">C</span>
+              <span class="card-tag">Algorithms</span>
+              <span class="card-tag">Console Apps</span>
+            </div>
+            <div class="card-footer">
+              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="link-action">
+                View Source Code &rarr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-description">Feel free to reach out for collaborations, discussions, or just to say hello!</p>
+
+        <div class="contact-grid">
+          <a href="mailto:shubhamsinhaofficial77@gmail.com" class="card contact-card">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-label">Email</h3>
+              <p class="contact-value">shubhamsinhaofficial77@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="card contact-card">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-label">GitHub</h3>
+              <p class="contact-value">github.com/yourusername</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="card contact-card">
+            <div class="contact-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3 class="contact-label">LinkedIn</h3>
+              <p class="contact-value">linkedin.com/in/yourusername</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Shubham Sinha. All rights reserved.</p>
+      <a href="#about" class="back-to-top">Back to top &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
